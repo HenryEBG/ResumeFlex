@@ -1,0 +1,78 @@
+body {
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+   justify-content: center; 
+}
+
+#container {
+  background-color:rgb(54, 52, 52);
+  width: 95vw;
+  padding: 10px;
+  display: flex;
+   justify-content: flex-end; 
+}
+
+
+#personalInfo {
+ 
+  border: 1px solid orange;
+  width: 90vw;
+  min-width: 500px;
+  height: 50vh;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+ 
+#photoName {
+   flex-basis: 60%; 
+  height: 50%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+#info {
+   flex-basis:37%; 
+  height: 50%;
+  border: 1px solid green;
+}
+
+.break{
+  flex-basis: 100%;
+  height: 0;
+}
+
+#introduction {
+  width: 97%;
+  height: 49%;
+  border: 1px solid blue;
+}
+
+#photo {
+  height: 75%;
+  width: auto;
+}
+
+
+#nameTitle {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height:50%;
+  border: 1px solid blue;
+  
+}
+#name {
+  font-size: 2vw;
+  color: white;
+  /* border: 1px solid blue; */
+  
+}
+#title{
+  font-size: 1vw;
+  color:aqua;
+  /* border: 1px solid blue; */
+} 
