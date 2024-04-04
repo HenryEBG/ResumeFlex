@@ -17,10 +17,7 @@ body {
 /* first section container with personal info */
 #personalInfo {
 
-  /* border: 1px solid orange; */
   width: 90vw;
-  /* min-width: 500px; */
-  /* height: 50vh; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -28,9 +25,6 @@ body {
 
 /* subcontainer of personalInfo that contains photo and name */
 #photoName {
-  flex-basis: 60%;
-  height: 50%;
-  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   padding-bottom: 10px;
@@ -50,37 +44,30 @@ body {
   flex-direction: column;
   justify-content: space-around;
   height: 25%;
-  /* border: 1px solid blue; */
 
 }
 
 /* subcotaniner of nameTitle that contains the name */
 #name {
-  font-size: 2vw;
+  font-size: 200%;
   color: white;
-  /* border: 1px solid blue; */
+  
 
 }
 
 /* subcotaniner of nameTitle that contains the title */
-#title {
-  font-size: 1vw;
-  color: aqua;
-  /* border: 1px solid blue; */
+#title {  
+  color: aqua;  
 }
 
 /* subcontainer of personalInfo that contains the info like address */
 #info {
-  flex-basis: 37%;
-  height: 50%;
-  /* border: 1px solid green; */
   display: flex;
   justify-content: center;
 }
 
 /* subcontainer of info that contains the labels */
 #infoLabels {
-  flex-basis: 35%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -93,12 +80,10 @@ body {
 .infoLabel {
   color: white;
   font-weight: bold;
-  font-size: 1vw;
 }
 
 /* subcontainer of info that contains the data */
 #infoData {
-  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -108,7 +93,6 @@ body {
 /* class that gives format to the data items */
 .infoDataItem {
   color: lightgray;
-  font-size: 1vw;
 
 }
 
@@ -118,17 +102,11 @@ body {
 }
 
 
-/* force to send the introduction section to a new line */
-.break {
-  flex-basis: 100%;
-  height: 0;
-}
 
 /* id tag that define the format of the introduction text */
 #introduction {
   width: 97%;
   height: 49%;
-  /* border: 1px solid blue; */
   color: lightgray;
 }
 
@@ -137,16 +115,11 @@ body {
 /* container of the info and graphic sections */
 #containerSection{
   display: flex;
-  /* border: 1px solid blue;
-  height: 80vh; */
   justify-content: space-evenly;
 }
 
 /* container of the info section */
 #infoSection{
-  width:70%;
-  /* border: 1px solid blue;
-  height: 80vh; */
   display: flex;
   flex-direction: column;
 }
@@ -155,7 +128,8 @@ body {
 .sectionHeader{
   display: flex;
   justify-content: space-between;
-  padding: 5vh 5vw;
+  flex-wrap: nowrap;
+  padding: 5% 5%;
  
 }
 
@@ -171,7 +145,7 @@ body {
 .sectionHeaderTitle{
   color: aliceblue;
   text-transform: uppercase;
-  width: 95%;
+  width: 80%;
   background-color: rgb(63, 61, 61);
 }
 
@@ -224,15 +198,13 @@ body {
 /* graphic section container */
 #graphicSection{
   width:25%;
-  /* border: 1px solid blue;
-  height: 80vh; */
   display: flex;
   flex-direction: column;
 }
 
 /* format the title on the graphic section */
 .graphicTitle{
-  font-size: 1vw;
+  font-size: 100%;
   font-weight: bold;
   color: aliceblue;
   padding: 2vh 0;
@@ -240,7 +212,7 @@ body {
 
 /* format the text */
 .graphicText{
-  font-size: 1vw;
+  font-size: 100%;
   padding: 0.75vh .75vw;
   color: rgb(145, 143, 143);
 }
@@ -305,6 +277,59 @@ body {
 .color5{
   background-color: orange;
   height: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  
+  #photoName {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  #personalInfo {
+    display: flex;
+     flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .sectionHeader{
+    display: flex;
+    flex-direction: column;   
+    /* padding: 5vh 5vw; */
+   
+  }
+
+  #containerSection{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 15vw; */
+  }
+
+  #infoSection{
+     width:100%; 
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  #graphicSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 5vw;
+    font-size: 100%;
+  }
+
+  .sectionHeader{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    padding: 5vh 5vw;
+   
+  }
 }
 
 
