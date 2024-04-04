@@ -134,6 +134,7 @@ body {
 
 /* second block */
 
+/* container of the info and graphic sections */
 #containerSection{
   display: flex;
   /* border: 1px solid blue;
@@ -141,6 +142,7 @@ body {
   justify-content: space-evenly;
 }
 
+/* container of the info section */
 #infoSection{
   width:70%;
   /* border: 1px solid blue;
@@ -149,6 +151,7 @@ body {
   flex-direction: column;
 }
 
+/* container of the header of the info section */
 .sectionHeader{
   display: flex;
   justify-content: space-between;
@@ -172,6 +175,7 @@ body {
   background-color: rgb(63, 61, 61);
 }
 
+/* css tags to format the articles */
 .articleHeader{
   display: flex;
   justify-content: space-between; 
@@ -185,6 +189,7 @@ body {
   border-radius: 50%;
 }
 
+/* classes to apply color to the icons of the article and section */
 .iconHeaderColor1{
   background-color:dodgerblue;  
 }
@@ -193,6 +198,7 @@ body {
   background-color:rgb(54, 134, 94);  
 }
 
+/* give format to the body of the article */
 .articleHeaderTitle{
   color: aliceblue;
   font-weight: bold;
@@ -215,6 +221,7 @@ body {
   padding: 0 5vw;
 }
 
+/* graphic section container */
 #graphicSection{
   width:25%;
   /* border: 1px solid blue;
@@ -223,6 +230,7 @@ body {
   flex-direction: column;
 }
 
+/* format the title on the graphic section */
 .graphicTitle{
   font-size: 1vw;
   font-weight: bold;
@@ -230,18 +238,21 @@ body {
   padding: 2vh 0;
 }
 
+/* format the text */
 .graphicText{
   font-size: 1vw;
   padding: 0.75vh .75vw;
   color: rgb(145, 143, 143);
 }
 
+/* give format to the bars */
 .graphicBar{
   width: 80%;
   height: 4vh;
   display:flex;
 }
 
+/* give format to the skills squares */
 .skills{
   display: flex;
   height: 3vh;
@@ -258,6 +269,7 @@ body {
   /* justify-content: space-evenly; */
 }
 
+/* give format to the languace round circles */
 .graphicIconC{
   width: 2vw;
   height: 20vh;
@@ -265,6 +277,7 @@ body {
   margin: 0 1vw;
 }
 
+/* classes to apply the diferente colors to the graphics */
 .color0{
   background-color: gray;
   height: 80%;
